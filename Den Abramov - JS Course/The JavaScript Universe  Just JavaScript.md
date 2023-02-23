@@ -9,6 +9,7 @@ Instead, we’ll define it through examples. Numbers and strings are values. Obj
 There are also a lot of things that are not values, like the pieces of our code—our if statements, loops, and variable declarations, for example.
 
 # Values and Code
+
 As we start building our mental model, one of the first common misconceptions we need to clear up is that values are our code. Instead, we need to think of them separately—our code interacts with values, but values exist in a completely separate space.
 
 To distinguish between values and code in my JavaScript program, I like to imagine this drawing of the Little Prince by Antoine de Saint-Exupéry:
@@ -69,24 +70,26 @@ We can break values down into types—values of the same type behave in similar 
 After almost twenty-five years of studying JavaScript, the scientists have only discovered nine such types:
 
 ### Primitive Values
- -   **Undefined** (`undefined`), used for unintentionally missing values.
- -   **Null** (`null`), used for intentionally missing values.
- -   **Booleans** (`true` and `false`), used for logical operations.
- -   **Numbers** (`-100`, `3.14`, and others), used for math calculations.
- -   **BigInts** (uncommon and new), used for math on big numbers.
- -   **Strings** (`"hello"`, `"abracadabra"`, and others), used for text.
- -   **Symbols** (uncommon), used to perform rituals and hide secrets.
+
+- **Undefined** (`undefined`), used for unintentionally missing values.
+- **Null** (`null`), used for intentionally missing values.
+- **Booleans** (`true` and `false`), used for logical operations.
+- **Numbers** (`-100`, `3.14`, and others), used for math calculations.
+- **BigInts** (uncommon and new), used for math on big numbers.
+- **Strings** (`"hello"`, `"abracadabra"`, and others), used for text.
+- **Symbols** (uncommon), used to perform rituals and hide secrets.
 
 ### Objects and Functions
- -   Objects ({} and others), used to group related data and code.
- -   Functions (x => x * 2 and others), used to refer to code.
 
+- Objects ({} and others), used to group related data and code.
+- Functions (x => x * 2 and others), used to refer to code.
 
 ## No Other Types
 
 You might ask: “But what about other types I have used, like arrays?”
 
 **In JavaScript, there are no other fundamental value types other than the ones we have just enumerated.** The rest are all objects! For example, even arrays, dates, and regular expressions fundamentally are objects in JavaScript:
+
 ```js
 console.log(typeof([])); // "object"
 console.log(typeof(new Date())); // "object"
