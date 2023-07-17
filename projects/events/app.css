@@ -1,0 +1,37 @@
+.box {
+	width: 200px;
+	height: 200px;
+}
+
+#boxes {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+h1 {
+	text-align: center;
+}
+
+div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#username {
+	margin: auto;
+	display: block;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	text-align: center;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+#submit {
+	margin: auto;
+	margin-left: 2%;
+	width: 120px;
+	height: 20px;
+}
