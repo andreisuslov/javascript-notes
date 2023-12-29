@@ -16,4 +16,10 @@ Possible implementation:
 1.5.1 Reset the border
 1.5.2 Reset internal timer to get ready for another run
 
-Here, steps 1.1, 1.3, and 1.5.1 are related to the border, so we can introsuce an event listener that will watch for the events related to these steps, so that when they occur, we will interact with the border.
+Here, steps 1.1, 1.3, and 1.5.1 are related to the border element. So, we can introduce an event listener that will watch for the events related to these steps, so that when they occur, we will interact with the border.
+
+![timer](timer-image.png)
+
+We will introduce two classes: Image and Border.
+
+Class Timer: constructor(durationInput, startButton, pauseButton), start(), pause(), onDurationChange(), tick().
