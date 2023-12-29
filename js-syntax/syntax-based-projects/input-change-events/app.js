@@ -1,17 +1,17 @@
-const creditCardInput = document.querySelector('#cc');
-const termsCheckbox = document.querySelector('#terms');
-const veggieSelect = document.querySelector('#veggie');
+const creditCardInput = document.querySelector("#cc");
+const termsCheckbox = document.querySelector("#terms");
+const veggieSelect = document.querySelector("#veggie");
 const formData = {};
 // ONE callback works for any number of inputs!!
-for (let input of [ creditCardInput, termsCheckbox, veggieSelect ]) {
-	input.addEventListener('input', ({ target }) => {
-		const { name, type, value, checked } = target;
-		formData[name] = type === 'checkbox' ? checked : value;
-		console.log(formData)
-	});
+for (const input of [creditCardInput, termsCheckbox, veggieSelect]) {
+    input.addEventListener("input", ({target}) => {
+        const {name, type, value, checked} = target;
+        formData[name] = type === "checkbox" ? checked : value;
+        console.log(formData);
+    });
 }
 
-//We could use hard-coded callbacks:
+// We could use hard-coded callbacks:
 // creditCardInput.addEventListener('input', (e) => {
 // 	console.log('CC CHANGED!', e);
 // 	formData['cc'] = e.target.value;
