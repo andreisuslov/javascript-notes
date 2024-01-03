@@ -9,6 +9,9 @@ const timer = new Timer(durationInput, startButton, pauseButton, {
     onTick() {
         console.log("Timer ticked");
     },
+    onPause() {
+        console.log("Timer paused");
+    },
     onComplete() {
         console.log("Timer completed");
     },
