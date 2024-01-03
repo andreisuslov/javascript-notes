@@ -10,6 +10,7 @@ class Timer {
         if (callbacks) {
             this.onStart = callbacks.onStart;
             this.onTick = callbacks.onTick;
+            this.onPause = callbacks.onPause;
             this.onComplete = callbacks.onComplete;
         }
     }
@@ -24,6 +25,10 @@ class Timer {
 
     pause = () => {
         clearInterval(this.interval);
+        if (this.timeRemaining < 1) return;
+        if (this.onPause) {
+            this.onPause();
+        }
     };
 
     tick = () => {
